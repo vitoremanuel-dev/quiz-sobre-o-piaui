@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
+import 'package:google_fonts/google_fonts.dart';
+
 class StartScreen extends StatelessWidget {
   const StartScreen(this.startQuiz, {super.key});
-  
+
   final void Function() startQuiz;
 
   @override
@@ -16,10 +18,10 @@ class StartScreen extends StatelessWidget {
             width: 300,
           ),
           const SizedBox(height: 30),
-          const Text(
+          Text(
             'Quiz sobre o Piauí!',
-            style: TextStyle(
-              fontSize: 20,
+            style: GoogleFonts.lato(
+              fontSize: 24,
               color: Colors.white,
             ),
           ),
